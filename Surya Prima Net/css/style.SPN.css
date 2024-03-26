@@ -1,0 +1,204 @@
+:root {
+  --primary: #e25925;
+  --complement: #1d61e9;
+  --bg: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--bg);
+}
+
+/* _____hero section_____ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/header2-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: var(--bg);
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 200;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  /* mix-blend-mode: difference; */
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  color: var(--bg);
+  background-color: var(--primary);
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+/* _____About Section_____ */
+.about,
+.menu,
+.contact {
+  padding: 10rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.contact h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  color: var(--complement);
+}
+
+.about h2 span,
+.menu h2 span,
+.contact h2 span {
+  color: var(--primary);
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  color: #000;
+}
+
+.about .row .content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--complement);
+}
+
+.about .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+/* _____Menu Section_____ */
+.menu h2,
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.menu .layanan h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--complement);
+}
+.menu p,
+.contact p {
+  text-align: center;
+  max-width: 60rem;
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.6;
+  padding-bottom: 3rem;
+  color: #000;
+}
+
+/* _____Contact Section_____ */
+.contact .row {
+  display: flex;
+  margin-top: 0.2rem;
+  background-color: #55585d;
+}
+.contact .row .map {
+  flex: 1 1 60rem;
+  width: 100%;
+  height: 22rem;
+  object-fit: cover;
+}
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.contact .row form .input-groub {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: #000000;
+  border: 1px solid var(--bg);
+  padding-left: 2rem;
+}
+.contact .row form .input-groub input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: none;
+  color: var(--bg);
+  margin-top: auto;
+}
+
+.contact .row form .btn {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 2.5;
+  color: var(--bg);
+  background-color: var(--primary);
+  cursor: pointer;
+}
