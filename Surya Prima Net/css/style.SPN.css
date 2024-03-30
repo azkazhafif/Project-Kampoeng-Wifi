@@ -202,3 +202,16 @@ body {
   background-color: var(--primary);
   cursor: pointer;
 }
+
+/* posisi navbar
+.navbar.navbar-light {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  flex: auto;
+  padding-bottom: auto;
+} */
+
+/* .navbar.navbar-expand-lg.navbar-light {
+  padding-left: 100px;
+} */
